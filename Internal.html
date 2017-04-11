@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<h1>-</h1>
+<hr>
+
+<html>
+
+<head>
+	<title>BrainWorks</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+  <script src="~/main.go"></script>
+</head>
+<body>
+    <!-- Message to user using Angular Services -->
+    <div ng-app="BrainWorks" ng-controller="myBrainWorksCtrl"> 
+<h1>{{myHeader}}</h1>
+</div>
+<script>
+var app = angular.module('BrainWorks', []);
+app.controller('myBrainWorksCtrl', function($scope, $timeout) {
+  $scope.myHeader = "Hello BrainWorks user!";
+  $timeout(function () {
+      $scope.myHeader = "Ready to see some scores?";
+  }, 2000);
+});
+</script>
+
+
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <!--Changed the top header here to include a name being entered and shown back to the user with a friendly hello-->
+      <div class="container">
+        <p>This is a place where you can record some scores from BrainWorks! </p>
+        <h1>BrainWorks - The Brain Training Game!!</h1>
+    <form method="POST" action="/scores">
+        <button type="submit" class="btn btn-danger">Click here to see Scores</button>
+    </form>
+      </div>
+    </div>
+
+
+<div>
+  <a href="http://imgur.com/qON30pL"><img src="http://i.imgur.com/qON30pL.jpg" title="source: imgur.com" style="float:left;"  ></a>
+  </div>
+  	<div class="container">
+      <details>  
+         <summary><b>About the app</b></summary>
+    <p>
+      <br>  Did you know that playing Brain-training games can decrease your risk of obtaining dementia in later years? </br>
+       <br> We have a wide array of games targeting the different areas of the brain; Memory, Speed, Attention and Problem-Solving. </br>
+       <br> Choose games from different areas to get the most out of the training! </br>
+       <br> You can visit this website to see how you fare against other people in the area and check your high scores daily! </br>
+       <br> It is highly important that you work on your brain continuously so brush the cobwebs away and get training! </br>
+    </p>
+</details>
+	</div>
+
+<div style="clear: left;">		
+        <a href="http://imgur.com/Y1kpc7w"><img src="http://i.imgur.com/Y1kpc7w.png" title="source: imgur.com" style="float:right;" height="300" width="600" /></a>		
+      </div>		
+        <div style="clear: left;" >		
+        <h1 style="display:inline-block;">Everything has a Porpoise</h1>		
+        <details>		
+    <summary>About the Game Everything Has A Porpoise</summary>		
+    <p>		
+      <br>Click on all the moving porpoises, the object of the game is to click a;; of the porpoise once. </br>		
+      <br>Don't click the same one twice though or you'll lose the game!</br>		
+      <br>The game might seem easy at first but as the game levels progress, more porpoise get added so you have to really concentrate to get through. </br>
+      <br> Good luck! </br>
+      <br>Creator: Claire Finn</br>		
+    </p>		
+</details>		
+</div>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<div style="clear: left;">		
+        <a href="http://imgur.com/uRMUAi1"><img src="http://i.imgur.com/uRMUAi1.png" title="source: imgur.com" style="float:left;" /></a>		
+</div>		
+        <div style="clear: right;" >		
+        <h1 style="display:inline-block;">Total Recall</h1>		
+        <details>		
+    <summary>About the Game Total Recall</summary>		
+    <p>		
+      <br>Remember all the details you can about the image provided.</br>		
+      <br>Try and remember as much detail about the image as possible</br>
+      <br> You'll have to recall those details to play! </br>		
+      <br>Creator: Claire Finn</br>		
+    </p>		
+</details>		
+</div>		
+<br></br>		
+<br></br>		
+<br></br>		
+<div style="clear: left;">		
+        <a href="http://imgur.com/9bXqPQS"><img src="http://i.imgur.com/9bXqPQS.png" title="source: imgur.com" style="float:right;" /></a>		
+        <div style="clear: left;" >		
+        <h1 style="display:inline-block;">Picture Perfect</h1>		
+        <details>		
+    <summary>About the Game Total Recall</summary>		
+    <p>		
+      <br>You will be provided with the starting letters of a word.</br>		
+      <br>Try to think of as many words using those letters as possible.</br>		
+      <br> Remember, you're on a time limit, go as quickly as possible! </br>
+      <br>Creator: Claire Finn</br>		
+    </p>		
+</details>		
+</div>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<div style="clear: left;">		
+        <a href="http://imgur.com/fya1ASV"><img src="http://i.imgur.com/fya1ASV.png" title="source: imgur.com" style="float:left;" /></a></div>		
+        <div style="clear: right;" >		
+        <h1 style="display:inline-block;">Manic Maths</h1>		
+        <details>		
+    <summary>About the Game Picture Perfect</summary>		
+    <p>		
+      <br>Remember all the details you can about the image provided</br>		
+      <br>Try and remember as much detail about the image as possible</br>
+      ,br> You'll have to recall those details to play! </br>		
+      <br>Creator: Thomas McNamara</br>		
+    </p>		
+</details>		
+</div>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<div style="clear: left;">		
+        <a href="http://imgur.com/jDqPKy4"><img src="http://i.imgur.com/jDqPKy4.png" title="source: imgur.com" style="float:right;" /></a><div style="clear: left;" >		
+        <h1 style="display:inline-block;">Higher or Lower</h1>		
+        <details>		
+    <summary>About the Game</summary>		
+    <p>		
+      <br>Remember all the details you can about the image provided</br>		
+      <br>You'll have to recall those details to play</br>		
+      <br>Creator: Thomas McNamara</br>		
+    </p>		
+</details>		
+</div>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<div style="clear: left;">		
+        <a href="http://imgur.com/pN9zsIu"><img src="http://i.imgur.com/pN9zsIu.png" title="source: imgur.com" style="float:left;" /></a><div style="clear: right;" >		
+        <h1 style="display:inline-block;">Quick RPQ</h1>		
+        <details>		
+    <summary>About the Game</summary>		
+    <p>		
+      <br>Looking at an image</br>		
+      <br>Try and remember as much detail about the image as possible</br>		
+      <br>Creator: Thomas McNamara</br>		
+    </p>		
+</details>		
+</div>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<div style="clear: left;">		
+        <a href="http://imgur.com/XQzgEQG"><img src="http://i.imgur.com/XQzgEQG.png" title="source: imgur.com" style="float:right;" height="500" width="1000" /></a><h1 style="display:inline-block;">Foal Shadow</h1>		
+        <details>		
+    <summary>About the Game</summary>		
+    <p>		
+      <br>Try to remember the last animal shadow you saw</br>		
+      <br>Because this game focuses on your ability to remember what you saw and get the answer as quickly as possible</br>		
+      <br>Creator: Declan Duffy</br>		
+    </p>		
+</details>		
+</div>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<div style="clear: left;">		
+        <a href="http://imgur.com/K5BW91y"><img src="http://i.imgur.com/K5BW91y.png" title="source: imgur.com" style="float:left;" /></a><div style="clear: right;" >		
+        <h1 style="display:inline-block;">Spot the Difference</h1>		
+        <details>		
+    <summary>About the Game</summary>		
+    <p>		
+      <br>Concentrate on all four images</br>		
+      <br>Because in this game you'll need a keen eye to spot the out one out</br>		
+      <br>Creator: Declan Duffy</br>		
+    </p>		
+</details>		
+</div>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<div style="clear: left;">		
+        <a href="http://imgur.com/jrx1oty"><img src="http://i.imgur.com/jrx1oty.png" title="source: imgur.com" style="float:right;" /></a><h1 style="display:inline-block;">Go with the BuffLow</h1>		
+        <details>		
+    <summary>About the Game</summary>		
+    <p>		
+      <br>With random numbers of Buffalo on each side</br>		
+      <br>Its up to you to match the number of buffalo on one side to  the number on the other side but wrong answers will cost you time</br>		
+      <br>Creator: Declan Duffy</br>		
+</p>		
+</details>		
+</div>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<br></br>		
+<div style="clear: left;">		
+        <a href="http://imgur.com/VDTnsBZ"><img src="http://i.imgur.com/VDTnsBZ.png" title="source: imgur.com" style=float:left; width="800" height="600" /></a>		
+        <h1 style="display:inline-block;">Sequential</h1>		
+        <details>		
+    <summary>About the Game</summary>		
+    <p>		
+      <br>Concentrate on all four images</br>		
+      <br>Because in this game you'll need a keen eye to spot the out one out</br>		
+      <br>Creator: Alanna Curran</br>		
+    </p>		
+</details>		
+</div>
+
+
+
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+                     <form method="post" action="/logout">
+    <button type="submit" class="btn btn-danger">Logout</button>
+          </button>
+          <a class="navbar-brand" href="#">BrainWorks</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+  
+</form>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+	<div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+         </div>
+        </div>
+      </div>
+
+
+
+	  <hr>
+      <footer>
+        <p>&copy; 2016 BrainWorks, Inc.</p>
+      </footer>
+    </div> <!-- /container -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+</body>
+</html>

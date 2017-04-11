@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<h1>-</h1>
+<hr>
+
+<html>
+
+<head>
+	<title>BrainWorks</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+  <script src="~/main.go"></script>
+</head>
+<body>
+    <!-- Message to user using Angular Services -->
+    <div ng-app="BrainWorks" ng-controller="myBrainWorksCtrl"> 
+<h1>{{myHeader}}</h1>
+</div>
+<script>
+var app = angular.module('BrainWorks', []);
+app.controller('myBrainWorksCtrl', function($scope, $timeout) {
+  $scope.myHeader = "Hello BrainWorks user!";
+  $timeout(function () {
+      $scope.myHeader = "Ready to see some scores?";
+  }, 2000);
+});
+</script>
+
+
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <!--Changed the top header here to include a name being entered and shown back to the user with a friendly hello-->
+      <div class="container">
+        <p>This is a place where you can record some scores from BrainWorks! </p>
+      </div>
+    </div>
+
+
+	<div class="container">
+	<img src="Desktop/Applied-Project-4th-Year/WebMainProject4thYear/Menu.png" alt="BrainWorksMenu" style= "width:200px;height:200px;"/>
+		<details>
+    <summary>About the game</summary>
+    <p>
+      <br>  Did you know that playing Brain-training games can decrease your risk of obtaining dementia in later years? </br>
+       <br> We have a wide array of games targeting the different area of the brain; Memory, Speed, Attention and Problem-Solving. </br>
+       <br> Choose games from different areas to get the most out of the training! </br>
+       <br> You can visit this website to see how you fare against other people in the area and check your high scores daily! </br>
+       <br> It is highly important that you work on your brain continuously so brush the cobwebs away and get training! </br>
+    </p>
+</details>
+	</div>
+
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+                     <form method="post" action="/logout">
+    <button type="submit" class="btn btn-danger">Logout</button>
+          </button>
+          <a class="navbar-brand" href="#">BrainWorks</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+  
+</form>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+	<div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+         </div>
+        </div>
+      </div>
+
+
+
+	  <hr>
+      <footer>
+        <p>&copy; 2016 BrainWorks, Inc.</p>
+      </footer>
+    </div> <!-- /container -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "vesoNSbHyke33ylP2gDMijyFkDM=",
+			"path": "BrainworksGoWebApp",
+			"revision": "da27703072c904b5066c3699d3f8c2472e9f5db9",
+			"revisionTime": "2017-03-30T11:21:20Z"
+		},
+		{
+			"path": "appengine/cloudsql",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "blZyJ896pCiBGuD5YJU5XXG95Ps=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "2e00b5cd70399450106cec6431c2e2ce3cae5034",
+			"revisionTime": "2016-12-24T12:10:19Z"
+		},
+		{
+			"checksumSHA1": "GKB96ojS6AY/uBnfLWqZBsxTBY4=",
+			"path": "github.com/gorilla/securecookie",
+			"revision": "e59506cc896acb7f7bf732d4fdf5e25f7ccd8983",
+			"revisionTime": "2017-02-24T19:38:04Z"
+		},
+		{
+			"checksumSHA1": "vE43s37+4CJ2CDU6TlOUOYE0K9c=",
+			"path": "golang.org/x/crypto/bcrypt",
+			"revision": "728b753d0135da6801d45a38e6f43ff55779c5c2",
+			"revisionTime": "2017-01-24T01:46:54Z"
+		},
+		{
+			"checksumSHA1": "JsJdKXhz87gWenMwBeejTOeNE7k=",
+			"path": "golang.org/x/crypto/blowfish",
+			"revision": "728b753d0135da6801d45a38e6f43ff55779c5c2",
+			"revisionTime": "2017-01-24T01:46:54Z"
+		}
+	],
+	"rootPath": "BrainworksGoWebApp"
+}
